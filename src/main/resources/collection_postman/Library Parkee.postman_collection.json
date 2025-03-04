@@ -1,0 +1,428 @@
+{
+	"info": {
+		"_postman_id": "5f9160b1-462e-4f14-8e4d-a39027bd5ab2",
+		"name": "Library Parkee",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19960928"
+	},
+	"item": [
+		{
+			"name": "/add/book",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"logsId\": \"123\",\r\n    \"title\": \"Kewirausahaan\",\r\n    \"isbn\": \"9876543210\",\r\n    \"stock\": \"6\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{localhost}}/add/book",
+					"host": [
+						"{{localhost}}"
+					],
+					"path": [
+						"add",
+						"book"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "/add/book",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"logsId\": \"123\",\r\n    \"title\": \"Informatika\",\r\n    \"isbn\": \"987654321\",\r\n    \"stock\": \"10\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{localhost}}/add/book",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"add",
+								"book"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 03 Mar 2025 08:43:25 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"logsId\": \"123\",\n    \"status\": \"success\",\n    \"message\": \"Add book successfully\",\n    \"data\": \"\"\n}"
+				}
+			]
+		},
+		{
+			"name": "/add/borrower",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"logsId\": \"123\",\r\n    \"nik\": \"3109010101010003\",\r\n    \"name\": \"Julio\",\r\n    \"email\": \"julio@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{localhost}}/add/borrower",
+					"host": [
+						"{{localhost}}"
+					],
+					"path": [
+						"add",
+						"borrower"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "/add/borrower",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"logsId\": \"123\",\r\n    \"nik\": \"3109010101010002\",\r\n    \"name\": \"Rohman\",\r\n    \"email\": \"rohman@gmail.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{localhost}}/add/borrower",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"add",
+								"borrower"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 03 Mar 2025 06:18:51 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"logsId\": \"123\",\n    \"status\": \"success\",\n    \"message\": \"Add borrower successfully\",\n    \"data\": \"\"\n}"
+				}
+			]
+		},
+		{
+			"name": "/loan",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"logsId\": \"123\",\r\n    \"nik\": \"3109010101010003\",\r\n    \"isbn\": \"9876543210\",\r\n    \"loanDeadline\": \"2025-03-10\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{localhost}}/loan",
+					"host": [
+						"{{localhost}}"
+					],
+					"path": [
+						"loan"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "/loan",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"logsId\": \"123\",\r\n    \"nik\": \"3109010101010002\",\r\n    \"isbn\": \"012345678\",\r\n    \"loanDeadline\": \"2025-03-10\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{localhost}}/loan",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"loan"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 03 Mar 2025 08:27:06 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"logsId\": \"123\",\n    \"status\": \"success\",\n    \"message\": \"Loan successfully\",\n    \"data\": \"\"\n}"
+				}
+			]
+		},
+		{
+			"name": "/return",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"logsId\": \"123\",\r\n    \"nik\": \"3109010101010002\",\r\n    \"isbn\": \"012345678\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{localhost}}/return",
+					"host": [
+						"{{localhost}}"
+					],
+					"path": [
+						"return"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "/return",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"logsId\": \"123\",\r\n    \"nik\": \"3109010101010001\",\r\n    \"isbn\": \"012345678\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{localhost}}/return",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"return"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 03 Mar 2025 08:39:35 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"logsId\": \"123\",\n    \"status\": \"success\",\n    \"message\": \"Return successfully\",\n    \"data\": \"\"\n}"
+				}
+			]
+		},
+		{
+			"name": "/get/list/loan",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"logsId\": \"123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{localhost}}/get/list/loan",
+					"host": [
+						"{{localhost}}"
+					],
+					"path": [
+						"get",
+						"list",
+						"loan"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "/get/list/loan",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"logsId\": \"123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{localhost}}/get/list/loan",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"get",
+								"list",
+								"loan"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 04 Mar 2025 00:39:43 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"logsId\": \"123\",\n    \"status\": \"success\",\n    \"message\": \"Get list Loan successfully\",\n    \"data\": [\n        {\n            \"nik\": \"3109010101010001\",\n            \"name\": \"Rojali Nugroho\",\n            \"isbnBook\": \"012345678\",\n            \"title\": \"Matematika\",\n            \"loanDate\": \"2025-03-03\",\n            \"loanDeadline\": \"2025-03-20\",\n            \"returnDate\": \"2025-03-03\",\n            \"statusReturn\": \"Ontime\"\n        },\n        {\n            \"nik\": \"3109010101010002\",\n            \"name\": \"Rohman\",\n            \"isbnBook\": \"012345678\",\n            \"title\": \"Matematika\",\n            \"loanDate\": \"2025-03-03\",\n            \"loanDeadline\": \"2025-03-10\",\n            \"returnDate\": \"2025-03-04\",\n            \"statusReturn\": \"Ontime\"\n        }\n    ]\n}"
+				}
+			]
+		}
+	]
+}
